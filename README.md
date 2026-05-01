@@ -1,16 +1,15 @@
-# web_of_edss
+# EDSS Wiki
 
-A new Flutter project.
+永昼生存服务器（E.D.S.S）的官方维基百科网站
+The offical wiki web of Eternal Dawn Survival Server(E.D.S.S)
 
-## Getting Started
+## 详情
 
-This project is a starting point for a Flutter application.
+这个Web项目是Threedimension为永昼生存服务器开发的维基百科网站，主要用于宣传与介绍服务器
 
-A few resources to get you started if this is your first Flutter project:
+本项目（前端）使用了Flutter Web作为技术栈，如果有任何错误，欢迎指正
+注：本项目Wiki页面除主页外，内容与pageId全部于数据库加载，所以在纯前端形式下保存将不会生效
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 服务器QQ群号：742874377
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+欢迎任何人加入永昼生存服务器！
