@@ -7,7 +7,7 @@ import 'package:markdown/markdown.dart' as md;
 import 'package:web_of_edss/services/auth_service.dart';
 import 'package:web_of_edss/specialpage/LoginPage.dart';
 
-enum WikiMode { view, edit }
+enum WikiMode { view, edit } //使用枚举切换模式
 
 class WikiCard extends StatefulWidget {
   final String? pageId;
@@ -27,7 +27,7 @@ class WikiCard extends StatefulWidget {
 
 class _WikiCardState extends State<WikiCard> {
   late TextEditingController _controller;
-  WikiMode _mode = WikiMode.view;
+  WikiMode _mode = WikiMode.view;//默认设置为阅读模式
   bool isLoggedIn = false;
   String baseUrl = "http://localhost:8080";//https://krystin-unshippable-eloise.ngrok-free.dev
   double _currentFontSize = 20;
@@ -35,9 +35,9 @@ class _WikiCardState extends State<WikiCard> {
   @override
   void initState() {
     super.initState();
-    _controller = TextEditingController();
-    _checkLoginStatus();
-    _loadFromServer();
+    _controller = TextEditingController();//控制编辑功能
+    _checkLoginStatus();//检查是否登录
+    _loadFromServer();//从数据库加载文本
   }
 
   @override
