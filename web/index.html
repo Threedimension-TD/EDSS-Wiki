@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- 隐藏 Flutter 加载指示器 -->
   <style>
-  #flutter_loading {
-    display: none !important;
-  }
-</style>
+    #flutter_loading {
+      display: none !important;
+    }
+  </style>
+
   <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
+    如果 Web 应用部署在非根路径下，请修改下面的 href 值为实际的基础路径。
+    路径必须以 "/" 开头和结尾才能正常工作。
+    更多详情参考：https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    这里的 $FLUTTER_BASE_HREF 会在构建时被 --base-href 参数替换。
   -->
   <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <!-- 页面描述，用于 SEO -->
   <meta name="description" content="EDSS永昼生存服务器官方网站">
 
-  <!-- iOS meta tags & icons -->
+  <!-- iOS 相关 meta 标签和图标 -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="web_of_edss">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <!-- Favicon -->
+  <!-- 网站图标 -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
+  <!-- 页面标题 -->
   <title>永昼生存服务器 | Eternal Dawn Survival Server</title>
+
+  <!-- PWA 清单文件 -->
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <!-- Flutter 应用引导脚本（异步加载） -->
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
