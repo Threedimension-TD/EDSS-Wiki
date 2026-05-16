@@ -94,6 +94,24 @@ class MyBottomBavigationBar extends StatelessWidget {
             ),
           ),
 
+          Padding(
+            padding: EdgeInsets.only(left: 30, top: 165),
+            child: ListTile(
+              leading: CircleAvatar(
+                radius: 20,
+                backgroundImage: AssetImage("assets/images/noneuwu.jpg"),
+              ),
+              title: SelectableText(
+                "摸鱼：NoneUwU",
+                style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255)),
+              ),
+              subtitle: SelectableText(
+                "一只并不可爱的小None",
+                style: TextStyle(color: const Color.fromARGB(255, 100, 100, 100)),
+              ),
+            ),
+          ),
+
           // QQ 群邀请信息（固定定位在右侧）
           Positioned(
             top: 50,
