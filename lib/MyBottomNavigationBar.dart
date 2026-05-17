@@ -12,10 +12,10 @@ class MyBottomBavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 240,                // 固定高度 240 像素
-      width: double.infinity,     // 宽度撑满父容器
+      height: 240, // 固定高度 240 像素
+      width: double.infinity, // 宽度撑满父容器
       decoration: BoxDecoration(
-        color: Colors.black,      // 黑色背景
+        color: Colors.black, // 黑色背景
         borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(0),
           topRight: Radius.circular(0),
@@ -24,9 +24,7 @@ class MyBottomBavigationBar extends StatelessWidget {
       child: Stack(
         children: [
           // 居中显示的 Logo 图片
-          Center(
-            child: Image.asset("assets/images/logo.png"),
-          ),
+          Center(child: Image.asset("assets/images/logo.png")),
 
           // "开发人员" 标题文字
           Padding(
@@ -47,11 +45,15 @@ class MyBottomBavigationBar extends StatelessWidget {
               ),
               title: SelectableText(
                 "作者：Threedimension",
-                style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255)),
+                style: TextStyle(
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                ),
               ),
               subtitle: SelectableText(
                 "联系我们：535061705@qq.com",
-                style: TextStyle(color: const Color.fromARGB(255, 100, 100, 100)),
+                style: TextStyle(
+                  color: const Color.fromARGB(255, 100, 100, 100),
+                ),
               ),
             ),
           ),
@@ -66,11 +68,15 @@ class MyBottomBavigationBar extends StatelessWidget {
               ),
               title: SelectableText(
                 "主要设计：Trappist-1c",
-                style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255)),
+                style: TextStyle(
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                ),
               ),
               subtitle: SelectableText(
                 "一只可爱的小1c",
-                style: TextStyle(color: const Color.fromARGB(255, 100, 100, 100)),
+                style: TextStyle(
+                  color: const Color.fromARGB(255, 100, 100, 100),
+                ),
               ),
             ),
           ),
@@ -81,34 +87,19 @@ class MyBottomBavigationBar extends StatelessWidget {
             child: ListTile(
               leading: CircleAvatar(
                 radius: 20,
-                backgroundImage: AssetImage("assets/images/luoyuchou.png"),
-              ),
-              title: SelectableText(
-                "素材提供：洛雨稠Netflight",
-                style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255)),
-              ),
-              subtitle: SelectableText(
-                "一只可爱的小Nefo",
-                style: TextStyle(color: const Color.fromARGB(255, 100, 100, 100)),
-              ),
-            ),
-          ),
-
-          // 开发人员 4：将来可能的素材提供 NoneUwU 
-          Padding(
-            padding: EdgeInsets.only(left: 30, top: 235),
-            child: ListTile(
-              leading: CircleAvatar(
-                radius: 20,
                 backgroundImage: AssetImage("assets/images/noneuwu.jpg"),
               ),
               title: SelectableText(
-                "摸鱼：NoneUwU",
-                style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255)),
+                "素材提供：NoneUwU",
+                style: TextStyle(
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                ),
               ),
               subtitle: SelectableText(
                 "一只并不可爱的小None",
-                style: TextStyle(color: const Color.fromARGB(255, 100, 100, 100)),
+                style: TextStyle(
+                  color: const Color.fromARGB(255, 100, 100, 100),
+                ),
               ),
             ),
           ),
@@ -117,14 +108,11 @@ class MyBottomBavigationBar extends StatelessWidget {
           Positioned(
             top: 50,
             left: 1200,
-            child: Text(
-              '''加入服务器：QQ群742834377
+            child: Text('''加入服务器：QQ群742834377
 
 永昼生存服务器随时欢迎您的到来！
-            ''',
-              style: TextStyle(color: Colors.white, fontSize: 16),
-            ),
-          )
+            ''', style: TextStyle(color: Colors.white, fontSize: 16)),
+          ),
         ],
       ),
     );
